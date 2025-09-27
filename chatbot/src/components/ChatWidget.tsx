@@ -48,7 +48,7 @@ const handleSendMessage = async () => {
 
   try {
     
-    const response = await axios.post('http://127.0.0.1:8001/chat', {
+    const response = await axios.post('https://fastapi-chatbot-x91y.onrender.com/chat', {
       query: inputValue
     });
     const botText = response.data.answer || "Sorry, I didn't understand that.";

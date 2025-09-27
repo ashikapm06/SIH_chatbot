@@ -808,7 +808,7 @@ async def gov_top_congested(top_n: int = 5):
 
 @app.get("/trips/sample")
 async def sample_trips(limit: int = 10):
-    df: pd.DataFrame = app.state.user_data
+    df: pd.DataFrame = app.state.user_datanfdndnkksksninjnjr
     sample = df.head(limit).to_dict(orient='records')
     return {"sample_trips": sample}
 
